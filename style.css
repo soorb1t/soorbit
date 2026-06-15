@@ -1,0 +1,266 @@
+header{
+    background-color: #1a1a1e;
+    border: 2px solid #ff4655;
+    box-shadow: 0 0 20px rgba(255, 70, 85, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+}
+body{
+    display: flex;
+    background-color: #121214;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    gap: 40px;
+}
+
+.buttons1{
+    display: flex;
+    gap: 10px;
+}
+
+.twitch{
+    color:  white;
+    background-image: linear-gradient(#ff00c8, #ae00ff);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.twitch:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.twitch:active{
+    transform: scale(0.95);
+}
+.youtube{
+    color:  white;
+    background-image: linear-gradient(#ff0000, #fc5e5e);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.youtube:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.youtube:active{
+    transform: scale(0.95);
+}
+.discord{
+    color:  white;
+    background-image: linear-gradient(#4933ab, #1b3b6e);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.discord:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.discord:active{
+    transform: scale(0.95);
+}
+.steam{
+    color:  white;
+    background-image: linear-gradient(#002df5, #0059ff);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.steam:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.steam:active{
+    transform: scale(0.95);
+}
+.help{
+    color:  white;
+    background-image: linear-gradient(#ff0000, #ff7300);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.help:hover{
+    transform: scale(1.05);
+}
+.help:active{
+    transform: scale(0.95);
+}
+.toast {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2ecc71;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    border: 1px solid black;
+}
+.toast.show {
+    top: 20px;
+    opacity: 1;
+}
+@keyframes subtle-glitch {
+  0%, 85%, 89%, 93%, 100% {
+    text-shadow: none;
+    transform: skew(0deg);
+  }
+  86% {
+    text-shadow: 2px -1px 0 rgba(255, 0, 85, 0.5), -2px 1px 0 rgba(0, 255, 255, 0.5);
+    transform: skew(1deg);
+  }
+  88% {
+    text-shadow: -2px 2px 0 rgba(255, 0, 85, 0.5), 2px -1px 0 rgba(0, 255, 255, 0.5);
+    transform: skew(-1deg);
+  }
+  90% {
+    text-shadow: 3px 1px 0 rgba(255, 0, 85, 0.4), -1px 3px 0 rgba(0, 255, 255, 0.4);
+  }
+  92% {
+    text-shadow: none;
+  }
+}
+
+h1 {
+  animation: subtle-glitch 3s linear infinite; 
+}
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.player-card {
+    background: #111215;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.player-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ctrl-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ctrl-btn:hover {
+    border-color: #ff0055;
+    box-shadow: 0 0 8px rgba(255, 0, 85, 0.3);
+}
+
+.timeline {
+    flex-grow: 1; 
+    accent-color: #ff0055;
+    cursor: pointer;
+    height: 4px;
+}
+
+.volume-slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    height: 14px; 
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 2px;
+    height: 3px; 
+    transition: background 0.2s ease;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -4px; 
+    background-color: #ff0055;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%; 
+    box-shadow: 0 0 5px rgba(255, 0, 85, 0.5); 
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.volume-slider:hover::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.volume-slider:hover::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background-color: #00ffff; 
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+.tiktok {
+    background-image: linear-gradient(#000000, #242020);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.tiktok:hover {
+    box-shadow: -2px -2px 8px rgba(0, 242, 234, 0.6), 2px 2px 8px rgba(254, 44, 85, 0.6);
+    border-color: rgba(255, 255, 255, 0.4);
+}
